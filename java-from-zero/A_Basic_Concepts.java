@@ -30,9 +30,11 @@
  system.out.println("text to print")
 
  IMPORTANT NOTE: IN JAVA WE'VE TO END THE INSTUCTION WITH ; ALWAYS
+ Also is important to know, the name of the class will start with a
+ capital letter.
  */
 
-public class 0_Basic_Concepts {
+public class A_Basic_Concepts {
     public static void main(String[] args) {
         System.out.println("Hello java");
     }
