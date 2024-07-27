@@ -4,7 +4,7 @@
  * Length tell us how long a string is.
  * Substring asks for an input to the user and gives
  back the strings length but only between the
- parameters w've choosed. 
+ parameters the user has choosed. 
 
  We'll do an exercise for undertanding better this point.
 

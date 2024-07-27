@@ -25,7 +25,7 @@ about numbers or text.
 public class C_Variables_and_data_types  {
     public static void main (String[] arg){
 
-        int shots = 40;
+        int shots = 40; //The variable of entire number "int" with the name shots
         int weeks = 52;
         int illness = 0;
 

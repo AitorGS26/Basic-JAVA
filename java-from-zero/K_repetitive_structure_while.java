@@ -4,6 +4,7 @@
  
  * First of all the variable will be declared outside the brackets
  there is no option for declaring it inside the structure as "for".
+ 
  * Previously we've learned that "for" structure is the following:
  for(start; condition; increase)
  
@@ -11,6 +12,7 @@
  we only have to put the condition (we've already declared the variable)
 
  * Then we'll print the result and AFTER this,we'll put the increase.
+ * Then it will be back to the start but with increase.
  
  */
 

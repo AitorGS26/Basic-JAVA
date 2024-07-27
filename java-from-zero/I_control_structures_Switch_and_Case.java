@@ -18,7 +18,7 @@
  case 3 - bbq pizza
 
  As you can see, in if-else structure, we have diferent options and
- diferent case for each option, in switch-case structure,
+ diferent cases for each option, in switch-case structure,
  we've one option and different cases for this.
 
 Example"
@@ -26,7 +26,7 @@ Example"
 public class I_control_structures_Switch_and_Case{
     public static void main (String [] args){
         int num_1 = 5, num_2 =3, answer = 0;
-        int parameter = 4;
+        int parameter = 4; //put here your case number
 
         switch (parameter){
             case 1 : answer = num_1 + num_2;

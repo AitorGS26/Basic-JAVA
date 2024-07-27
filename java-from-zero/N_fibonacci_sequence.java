@@ -5,11 +5,12 @@
 
  public class N_fibonacci_sequence{
     public static void main(String[] args) {
-     
+        System.out.println(" ");
         System.out.println("**********************");
         System.out.println("Fibonacci sequence");
         System.out.println("**********************");
-
+        System.out.println(" ");
+        
         int i=0;
         int a=0;
         int b=1;

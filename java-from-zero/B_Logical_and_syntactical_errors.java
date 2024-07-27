@@ -27,7 +27,8 @@ public class B_Logical_and_syntactical_errors {
 
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello, World!" // Syntactical error 
+        System.out.println("Hello, World!" 
+        // Syntactical error 
         //here: missing closing parenthesis and semicolon
     }
 }

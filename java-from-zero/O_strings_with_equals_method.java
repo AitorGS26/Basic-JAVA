@@ -1,20 +1,21 @@
 /*
  * Now, we're going to know how to compare things in java.
  
- For now we've been working with numbers
+ *For now we've been working with numbers
  with INT:
- In Java, int is a primitive data type that 
+ 
+ - In Java, int is a primitive data type that 
  represents a 32-bit signed integer, ranging 
  from -2,147,483,648 to 2,147,483,647
 
- Now for comparing with equals we'll work with letters
+ *Now for comparing with equals we'll work with letters
  or in other words with "String"
 
- See how string is written, this is not a failure
+ *See how string is written, this is not a failure
  is important to write "S" in capital letter for
  java knowing how to interpret.
 
- for comparing we'll use .equals, but maybe is easier 
+ *For comparing we'll use .equals, but maybe is easier 
  to explain with an example.
 
  EXERCISE 1 - 

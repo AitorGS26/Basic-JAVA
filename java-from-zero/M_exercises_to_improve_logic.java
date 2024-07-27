@@ -11,6 +11,7 @@
         System.out.println("********************************");
         System.out.println("Lets go with the first exercise");
         System.out.println("********************************");
+        System.out.println(" ");
         int i=0;
         System.out.println("First exercise with FOR");
         for(i=1; i<11; i++){
@@ -20,10 +21,10 @@
                 System.out.print(i);
             }
         }
-        i=1;
         System.out.println(" ");
-
         System.out.println("First exercise with WHILE");
+
+        i=1;
         while(i<11){
             if (i<11){
                 System.out.print(i + ", ");
@@ -33,11 +34,10 @@
                 break;
             }
         }
-        i=1;
         System.out.println(" ");
-
         System.out.println("First exercise with DO-WHILE");
 
+        i=1;
         do { 
             if (i<11){
                 System.out.print(i + ", ");
@@ -53,7 +53,8 @@
         System.out.println("*********************************");
         System.out.println("Lets go with the second exercise");
         System.out.println("*********************************");
-
+        System.out.println(" ");
+        
         i=1;
         int j=1;
         int k=99;

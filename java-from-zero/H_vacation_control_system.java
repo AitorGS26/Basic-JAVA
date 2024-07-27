@@ -1,10 +1,12 @@
-/*
- * Vacation control system exercise.
+/*************************************
+ * Vacation control system exercise.**
+ * ***********************************
+ 
  * CodingEmpire.SA tell us to do a system which calculates the 
 holidays of the workers, taking in account the following 
 characteristics:
 
-There are 3 departments in Sierra.sl:
+There are 3 departments in CodingEmpire.SA:
 1. IT (key 1)
 2. Logistics (key 2)
 3. Customer service (key 3)

@@ -18,6 +18,7 @@
  outside the structure. In my personal opinion declaring it
  outside will be the best option for having the structure well 
  structured.
+ 
  * In a loop we'll search for having an increment or a decrease of
  something, the form for this will be ++ or -- next to the variable
  for increasing or decreasing one by one (i++ or i--).
