@@ -3,7 +3,7 @@
  columns of a matrix and the data will be a +10 counter
  */
 import java.util.Scanner;
-public class T1_Dynamic_Matrix_exercise {
+public class Tt_Dynamic_Matrix_exercise {
     public static void main(String[] args) {
         int lines = 0, columns = 0, counter = 1;
         Scanner imput = new Scanner(System.in);
