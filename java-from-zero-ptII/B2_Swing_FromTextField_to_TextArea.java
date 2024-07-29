@@ -42,7 +42,7 @@ public class B2_Swing_FromTextField_to_TextArea extends JFrame implements Action
         if (e.getSource() == button0) { //if the action event comes from button0 do..
             text += textfield0.getText() + "\n"; //here text variable get the text from textfield0 and saves it thanks of +=
             textarea0.setText(text);//and here text sets the saved text in textarea0
-            textfield0.setText("");//for cleaning the textfield.
+            textfield0.setText("");//for cleaning the textfield
         }
     }
     public static void main(String[] args) {
