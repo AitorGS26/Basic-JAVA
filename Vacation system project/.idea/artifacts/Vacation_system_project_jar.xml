@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Vacation system project:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Vacation_system_project_jar</output-path>
+    <root id="archive" name="Vacation system project.jar">
+      <element id="module-output" name="Vacation system project" />
+    </root>
+  </artifact>
+</component>
