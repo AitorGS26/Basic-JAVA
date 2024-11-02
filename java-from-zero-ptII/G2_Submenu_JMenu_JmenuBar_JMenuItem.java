@@ -12,31 +12,44 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
-public class H2_Submenu_JMenu_JmenuBar_JMenuItem extends JFrame implements ActionListener {
+public class G2_Submenu_JMenu_JmenuBar_JMenuItem extends JFrame implements ActionListener {
 
     private JMenuBar menuBar;
     private JMenu Options, subMenu1, subMenu2;
     private JMenuItem item1menu1, item2menu1, item1menu2, item2menu2;
 
-    public H2_Submenu_JMenu_JmenuBar_JMenuItem(){
+    public G2_Submenu_JMenu_JmenuBar_JMenuItem(){
         setLayout(null);
-
+        //We start setting the menu bar
         menuBar = new JMenuBar();
         setJMenuBar(menuBar);
-
+        
+        //Now we declare "options" and put it inside menuBar
         Options = new JMenu("Options");
         menuBar.add(Options);
-
+        
+        //We declare the submenu1 which will be inside options and will set window's size
         subMenu1 = new JMenu("Window Size");
+
+        //After declaring int, we add inside Options
         Options.add(subMenu1);
+
+        /*We've right now the menu bar, the "Options" option and inside of it
+          the option Window size, now we need the two sizes that will be available*/
 
         item1menu1 = new JMenuItem("400 x 300");
         subMenu1.add(item1menu1);
         item1menu1.addActionListener(this);
         item2menu1 = new JMenuItem("600 x 500");
         subMenu1.add(item2menu1);
+
+        /*Don't forget adding action listener for letting the program listening this two
+        features*/
         item2menu1.addActionListener(this);
 
+        /*We've to do the same right now with Window colour, adding it to Options
+        and then inside of this "Window colour", will be the two colours available
+        to change the background of the window */
         subMenu2 = new JMenu("Window Colour");
         Options.add(subMenu2);
 
@@ -48,22 +61,27 @@ public class H2_Submenu_JMenu_JmenuBar_JMenuItem extends JFrame implements Actio
         item2menu2.addActionListener(this);
 
     }
+    /*We've declared and added all the menu parts we need, now we have to tell
+      the program what to do when the user clicks in one of that options 
+      
+     * We declare the following class: */
+
     public void actionPerformed(ActionEvent e){
-        if(e.getSource() == item1menu1){
-            setSize(400,300);
+        if(e.getSource() == item1menu1){//If the event comes from item1menu1
+            setSize(400,300);//Set window's size 400px x 300px
         }
         if(e.getSource() == item2menu1){
             setSize(600,500);
         }
-        if(e.getSource() == item1menu2){
-            getContentPane() .setBackground(new Color(255,0,0));
+        if(e.getSource() == item1menu2){//If the event comes from item1menu2
+            getContentPane() .setBackground(new Color(255,0,0));//Set background red
         }
         if(e.getSource() == item2menu2){
             getContentPane() .setBackground(new Color(0,0,255));
         }
     }
     public static void main(String[]args){
-        H2_Submenu_JMenu_JmenuBar_JMenuItem box = new H2_Submenu_JMenu_JmenuBar_JMenuItem();
+        G2_Submenu_JMenu_JmenuBar_JMenuItem box = new G2_Submenu_JMenu_JmenuBar_JMenuItem();
         box.setBounds(0,0,400,300);
         box.setVisible(true);
         box.setLocationRelativeTo(null);

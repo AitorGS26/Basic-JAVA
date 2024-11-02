@@ -3,7 +3,9 @@
  This is simmilar but different of "for".
  
  * First of all the variable will be declared outside the brackets
- there is no option for declaring it inside the structure as "for".
+ there is no option for declaring it inside the structure as "for". 
+ Another reason for keepeng for's variable declared outside, this way you'll never 
+ make mistakes.
  
  * Previously we've learned that "for" structure is the following:
  for(start; condition; increase)
@@ -19,7 +21,7 @@
  class K_repetitive_structure_while{
     public static void main(String[] args) {
         int i =10;
-        while (i<1000000){
+        while (i<1000010){
         System.out.print(i + ", ");
         i+=10;
         }

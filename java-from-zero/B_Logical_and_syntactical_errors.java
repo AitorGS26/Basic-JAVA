@@ -2,7 +2,8 @@
  Logical errors: A logical error is a type of mistake in a 
  program that causes it to operate incorrectly, but not to 
  crash or throw an error. The program runs, but it doesn't 
- do what you expect it to do.
+ do what you expect it to do. For example when you want to make a loop
+ and the loop never ends, the program works but not correctly.
 
  Synthactical errors: We talk about synthactical errors when in 
  a program we forget for example putting ; to an argument, or maybe 

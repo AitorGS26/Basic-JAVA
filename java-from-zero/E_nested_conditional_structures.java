@@ -5,7 +5,7 @@
  at the exercise below.
 
  Exercise 1:
- Do a program that can add, subtrack, miltiply or split two entire
+ Do a program that can add, subtrac, miltiply or split two entire
  numbers, depending user's decision
  */
 

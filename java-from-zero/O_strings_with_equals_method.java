@@ -1,8 +1,7 @@
 /*
  * Now, we're going to know how to compare things in java.
  
- *For now we've been working with numbers
- with INT:
+ *For now we've been working with numbers - int:
  
  - In Java, int is a primitive data type that 
  represents a 32-bit signed integer, ranging 
@@ -33,14 +32,19 @@ scanner*/
 import java.util.Scanner;
 public class O_strings_with_equals_method{
     public static void main(String[]args){
+        /**After settin the library, class an main method, we proceed to declare the 
+         variables we'll be using*/
         String name1 ="", name2="";
         Scanner input = new Scanner(System.in);
-
+        /**Here we ask the data to user */
         System.out.print("Introduce the first number: ");
-        name1=input.nextLine();
+        name1=input.nextLine();//And we save data inside the previous declared variables
         System.out.print("Introduce the second number: ");
-        name2=input.nextLine();
+        name2=input.nextLine();//Remember always reading it from right to left and up to down
 
+        /**After having all the data, we'll do an if-else structure, for comparing
+         user's data*/
+         
         if(name1.equals(name2)){
             System.out.println("They are same names! Well done");
         }else{

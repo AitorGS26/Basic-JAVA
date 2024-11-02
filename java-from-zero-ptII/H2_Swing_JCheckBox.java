@@ -7,13 +7,14 @@
 in the order the user has selected*/
 
 import javax.swing.*;
-import javax.swing.event.*;//For this we need Changelistener which is inside the events of this library
+import javax.swing.event.*;
+//For this we need Changelistener which is inside the events of this library
 
-public class I2_Swing_JCheckBox extends JFrame implements ChangeListener{
+public class H2_Swing_JCheckBox extends JFrame implements ChangeListener{
 
     private JCheckBox check1, check2, check3;
 
-    public I2_Swing_JCheckBox(){
+    public H2_Swing_JCheckBox(){
         setLayout(null);
 
         check1 = new JCheckBox("English");
@@ -34,7 +35,8 @@ public class I2_Swing_JCheckBox extends JFrame implements ChangeListener{
     //here is the change, until now we've seen actionPerformed, action event.
     //but for this we'll use stateChanged and ChangeEvent.
     public void stateChanged(ChangeEvent e){
-        String chain = "";//we declare the chain that will memorize the options the user have chosen.
+        String chain = "";
+        //we declare the chain that will memorize the options the user have chosen.
         if (check1.isSelected() == true){
             chain = chain + "English-";
         }
@@ -47,7 +49,7 @@ public class I2_Swing_JCheckBox extends JFrame implements ChangeListener{
         setTitle(chain); //the chain will set on the title.
     }
     public static void main (String[]args) {
-       I2_Swing_JCheckBox box = new I2_Swing_JCheckBox();
+       H2_Swing_JCheckBox box = new H2_Swing_JCheckBox();
        box.setBounds(0,0,400,300);
        box.setVisible(true);
        box.setResizable(false);

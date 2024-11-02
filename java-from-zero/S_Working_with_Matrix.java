@@ -1,27 +1,22 @@
-/**
- * Until now, we've been working with one dimension arrays,
+/**Until now, we've been working with one dimension arrays,
  we've seen one dimension arrays with static index and with
  dynamic index.  
 
  * Sometimes, we need to have more data in the same place, 
- For example, when we're at school we've diferent subjects,
- we could do a one dimension array with one student and different
- subjects with theis respective marks.
- We'll use matrix for a simmilar situation, but for example
- if we want to have the previous data but of all the students
- of the school.
+ for thiswe'll use Matrix.
+ * Matrix is an x - y axes structure, where each position will have some data.
+ * This allows us to do so many things as we'll be seeing in this and next lessons.
 
  * The two axes are ussualy are 
  * i => the x axe
  * j => the y axe
  
  * There we'll do like if we have "a word table", like the calendar of subjects at school.
- * 
- * for coding matrix, the line will be like => 
- ** int nameofthematrix [][] = new int [QuantityOfLines][QuantityOfColumns] 
+ *  
+ **MATRIX CODE => int "name" [][] = new int ["QuantityOfLines"]["QuantityOfColumns"] 
 
- * Here we also have static index matrix and dynamic index matrix. For now
- we'll be learning the functionality of the static matrix.
+ * Here we also have static and dynamic index matrix. For now we'll be learning 
+ the functionality of the static matrix.
 
  * You'll understand better with an exercise:
  

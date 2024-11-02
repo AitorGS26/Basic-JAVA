@@ -5,7 +5,8 @@ public class Z_Swing_JTextarea extends JFrame{
     
     private JTextField textField0;
     private JTextArea textArea0;
-
+    /*in this exercise we're adding a bigger textfield, called text area, we'll be 
+    working with it in next lessons*/
     public Z_Swing_JTextarea (){
 
         setLayout(null);

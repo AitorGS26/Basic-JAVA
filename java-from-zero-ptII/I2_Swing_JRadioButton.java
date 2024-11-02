@@ -1,15 +1,22 @@
+/**In this case we'll change the window's size but with radio button
+   this will appear in the window like three options to click on them
+  in each option when the user clicks in it the window will change it's size 
+ */
+
 import javax.swing.*;
 import javax.swing.event.*;
 
 
-public class J2_Swing_JRadioButton extends JFrame implements ChangeListener{
+public class I2_Swing_JRadioButton extends JFrame implements ChangeListener{
 
     private JRadioButton radio1, radio2, radio3;
     private ButtonGroup bg;
 
-    public J2_Swing_JRadioButton(){
+    public I2_Swing_JRadioButton(){
         setLayout(null);
-
+        /*After declaring the elements we'll be using in the exercise, we've to add a 
+        button group, this is for achieving all the events for the same feature in one place
+        bg will save the event of three options  */
         bg = new ButtonGroup();
 
         radio1 = new JRadioButton("400px x 300px");
@@ -30,6 +37,8 @@ public class J2_Swing_JRadioButton extends JFrame implements ChangeListener{
         add(radio3);
         bg.add(radio3);
     }
+    /*Then we declare the logic of the program, depending on which option 
+    chooses the user, the window will change it's size*/
     public void stateChanged(ChangeEvent e){
         if(radio1.isSelected() == true){
             setSize(400,300);
@@ -41,8 +50,9 @@ public class J2_Swing_JRadioButton extends JFrame implements ChangeListener{
             setSize(600,500);
         }
     }
+    //Then as always main method and the box which will contain all the above.
     public static void main(String[]args){
-        J2_Swing_JRadioButton box = new J2_Swing_JRadioButton();
+        I2_Swing_JRadioButton box = new I2_Swing_JRadioButton();
 
         box.setBounds(0,0,350,230);
         box.setVisible(true);

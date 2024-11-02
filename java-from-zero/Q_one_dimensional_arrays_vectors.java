@@ -1,5 +1,5 @@
 /*
- * ARRAYS : Data structure that stores multiple values
+ * ARRAYS or VECTORS: Data structure that stores multiple values
  of the same type. They allow us to store a list of
  data in the same variable instead of declaring each
  value on separated variables.
@@ -12,7 +12,7 @@
  or vectors.
 
  * The arrays always has an index, no matter
- the amount of position it has and it always starts
+ the amount of positions it has and it always starts
  from the 0 position. This index help us moving
  forward or backward the vector.
 

@@ -12,7 +12,7 @@ Math: 4
 Gym: 9
 Biology: 6
 
-For having a pass! you've to have an average higher than 6
+For having a pass!, you've to have an average higher than 6
 
 
  */
