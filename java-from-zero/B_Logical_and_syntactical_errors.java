@@ -13,8 +13,8 @@
  */
 
 //Example of a logical error:
-
 public class B_Logical_and_syntactical_errors {
+
     public static void main(String[] args) {
         int a = 5;
         int b = 10;
@@ -24,15 +24,10 @@ public class B_Logical_and_syntactical_errors {
 }
 
 //Example of a synthactical error:
-/*
-
 public class HelloWorld {
+
     public static void main(String[] args) {
-        System.out.println("Hello, World!" 
-        // Syntactical error 
-        //here: missing closing parenthesis and semicolon
+        System.out.println("Hello, World!"
+        /*Syntactical error here: missing closing parenthesis and semicolon */
     }
 }
-    */
-
-

@@ -11,6 +11,22 @@
  we've to create the "machine" which creates the thing we
  want to create.
 
+ THE CLASS
+ First of all we need a thing called class, you can see it like a logical
+ template which shares objects and methods
+ For example : The class animals
+
+ THE OBJECT
+
+The object is ans instance of a class. It has entity and behaviour
+
+For example, objects inside above's animal class: monkey, dog, cat, donkey
+
+ THE METHOD
+
+ The behaviour of an object is the method.
+ For example, continuing with above's animals example, the class animals has an object dog and a method "bark"
+
  THE MAIN METHOD
 
  * We have to take this as the start of the code. In java the program won't run if the MAIN
@@ -22,9 +38,12 @@
 
  PRINTING CODE
 
- * By now we've the public class and the main method and because of that we know
+ * By now we've the class and the main method and because of that we know
  the program will run, now we've to tell the program something for showing something to
  the user, we've to print the code and for that we've the following lines
+
+ The method, the printing and this all, will be inside a public class, this is for 
+ allowing any comunication between clases and for allowing anyone to running it.
  
  system.out.print("text for print"); -> the text is printed in the same line
  system.out.println("text to print") -> the text is printed in the next line
@@ -35,6 +54,7 @@
  */
 
 public class A_Basic_Concepts {
+
     public static void main(String[] args) {
         System.out.println("Hello java");
     }

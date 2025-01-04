@@ -1,15 +1,14 @@
 /*
- * ARRAYS or VECTORS: Data structure that stores multiple values
- of the same type. They allow us to store a list of
- data in the same variable instead of declaring each
- value on separated variables.
+ * ARRAYS or VECTORS: Data structure that stores multiple values of the same type. They allow us to store a list of
+ data in the same variable instead of declaring each value on separated variables.
 
  We've two types of arrays:
+
  One dimension arrays, which are called VECTORS.
  Two dimension arrays, which are called MATRIX.
 
  For now we're going to see one dimension arrays
- or vectors.
+ or VECTORS.
 
  * The arrays always has an index, no matter
  the amount of positions it has and it always starts
@@ -26,7 +25,7 @@
  The index has two behaviours: Static and Dynamic.
 
  * Static Index: A static index in an array refers 
- to a fixed, predefined position in the array that 
+ to a predefined position in the array that 
  does not change during the execution of the program.
  
  * Dynamic Index: A dynamic index in an array refers 
@@ -40,33 +39,33 @@
  * After we've declared the array, we've to introduce
  the data that will be inside the array like below:
 
- name [position of the vector] = element to save;
+ name [position inside the vector] = element to save;
 
  * And for printing the result:
+
  System.out.println(name [position inside the vector]);
 
  Exercise 1:
 
- Create a5 position vector, save a number in each 
+ Create a 5 position vector, save a number in each 
  position and finally print all the positions for
- verifying that is correct done.
+ verifying that is correct done.*/
 
- */
+public class Q_one_dimensional_arrays_vectors {
 
- public class Q_one_dimensional_arrays_vectors{
     public static void main(String[] args) {
-        
-        int[]vector=new int[5];
-        vector [0] = 1;
-        vector [1] = 2;
-        vector [2] = 3;
-        vector [3] = 4;
-        vector [4] = 5;
 
-        System.out.print(vector[0]+ ", ");
-        System.out.print(vector[1]+ ", ");
-        System.out.print(vector[2]+ ", ");
-        System.out.print(vector[3]+ ", ");
-        System.out.print(vector[4]);
+        int[] vector = new int[5];
+        vector[0] = 1; //index start's aways from 0 position
+        vector[1] = 2;
+        vector[2] = 3;
+        vector[3] = 4;
+        vector[4] = 5;
+
+        System.out.print(vector[0] + ", ");
+        System.out.print(vector[1] + ", ");
+        System.out.print(vector[2] + ", ");
+        System.out.print(vector[3] + ", ");
+        System.out.print(vector[4] + ".");
     }
- }
+}

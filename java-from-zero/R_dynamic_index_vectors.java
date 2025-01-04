@@ -1,5 +1,5 @@
-/* Dynamic index don't start always at 0 position,
-it will start where the program requires.
+/* Dynamic index also starts always by 0 position,
+but here the user will provide the amount of positions
 
  For this, we'll use a FOR loop.
 
@@ -19,43 +19,48 @@ it will start where the program requires.
     *Finally print the array in the below's form:
 
     [5][54][12][65][6][54][897]
-*/
+ */
 
 import java.util.Scanner;
 
 public class R_dynamic_index_vectors {
+
     public static void main(String[] args) {
-       /**We start declarig the variables we'll be using */
-        int Vectorlength = 0; //User's added vector length
+        /**
+         * We start declarig the variables we'll be using
+         */
+        int vectorLength = 0; //User's added vector length
         Scanner input = new Scanner(System.in); //scanner for user's input
 
-        /**We ask the user for data*/
-        System.out.print("How many numbers do you want to have the vector? ");
-        Vectorlength = input.nextInt();
+        /**
+         * We ask the user for data
+         */
+        System.out.print("How many positions do you want to have the vector? ");
+        vectorLength = input.nextInt();
 
         /*After saving data inside Vectorlength we declare "numbers" vector,
         putting inside the vector lenght the user's input for this*/
-        int[] numbers = new int[Vectorlength];
+        int[] numbers = new int[vectorLength];
 
-        /**We've the vector lengh't and we need the user's input for each position
-         of the vector so the loop will ask the user for that info*/
-        for (int i = 0; i < Vectorlength; i++) {
-        /*i => vectors position
+        /**
+         * We've the vector lengh't and we need the user's input for each
+         * position of the vector so the loop will ask the user for that info
+         */
+        for (int i = 0; i < vectorLength; i++) {
+            /*i => vector's actual position
          *it will be working until i=vector's length
          *it will be +1 adding for in user's each answer letting the data 
          inside all the positions of the vector*/
-            System.out.println("Please give the value of the #" + (i + 1));
+            System.out.print("Please give the value of the different positions, now #" + (i + 1));
             numbers[i] = input.nextInt();
         }
-        /**After saving all the data inside each vector's position, 
-         */
+        /* After saving all the data inside each vector's position*/
         System.out.print("The numbers in the vector are: ");
         for (int i = 0; i < numbers.length; i++) {
-            /**i variable is 0 and until i is =number's length the loop will do +1 */
-            System.out.print("[" + numbers[i] + "]");/*It will start printing from 0
-            position to the last*/
+            /* i variable is 0 and until i is =number's length the loop will do +1 */
+            System.out.print("[" + numbers[i] + "]");
         }
 
-        input.close(); // Cerrar el Scanner después de usarlo
+        input.close(); //This is for closing scanner
     }
 }

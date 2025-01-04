@@ -2,6 +2,10 @@
 Now we're going to allow the user introduce some data, 
 in this case the "name" and some numbers for doing an addition
 
+As we've seen in the previous lesson, the user chose some numbers and then an option between 
+1-4 for adding, subtracting, multiplying or splitting those numbers. In this lesson
+you'll understand how to do that
+
 * For this we're going first of all importing the Scanner Library
 This will be the library which will allow the user introducing data.
 
@@ -11,28 +15,30 @@ for making an addition.
  */
 
 import java.util.Scanner; //First of all we import the scanner library.
+
 public class F_introducing_data_from_keyboard_Scanner {
-    public static void main(String [] args){
-/*
+
+    public static void main(String[] args) {
+        /*
  * After putting main method, we start using the library we've imported.
  * For doing that, we tell the program to scanner "nameofthescanner",
  * we tell it's a new scanner and alwais (System.in) for telling the program
  * that usder's going to introduce the data we ask 
- */
+         */
         Scanner input = new Scanner(System.in);
-        String YourName  =""; //Name of the person
+        String YourName = ""; //Name of the person
         int num_1 = 0, num_2 = 0, answer = 0; //numbers for ask
 //Now we've to code the secuence of questions for the user
         System.out.print("What's your name?");
         YourName = input.nextLine();
-//When we ask for a string(letters) it will be in.nextLine
+//When we ask for a string(letters) it will be input.nextLine. input is the name we've added to scanner object
         System.out.print("Add your first number");
         num_1 = input.nextInt();
-//When we ask for a number it will be in.nextInt
+//When we ask for a number it will be input.nextInt
         System.out.print("Add your second number");
         num_2 = input.nextInt();
 
         answer = num_1 + num_2;
-        System.out.println("Hi " + YourName +  " Your addition answer is: " + answer);
+        System.out.println("Hi " + YourName + " Your addition answer is: " + answer);
     }
 }

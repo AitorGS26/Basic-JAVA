@@ -27,12 +27,13 @@
  the following => i+=(number for increasing or decreasing by itself)
 
  You'll understand better with an example.
-*/
-public class J_loops_or_repetitive_structure_For{
-    public static void main(String [] args){
-        int i=10; //here we declare the variable i
-        for(i=10; i<1000010; i+=10){ //start; condition; increase
-        System.out.println(i + ". ");//printing results
+ */
+public class J_loops_or_repetitive_structure_For {
+
+    public static void main(String[] args) {
+        int i = 10; //here we declare the variable i
+        for (i = 10; i < 10010; i += 10) { //start; condition; increase
+            System.out.print(i + ", ");//printing results
         }
     }
 }

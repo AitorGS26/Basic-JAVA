@@ -23,28 +23,34 @@
  we've one option and different cases for this.
 
 Example"
-*/
-public class I_control_structures_Switch_and_Case{
-    public static void main (String [] args){
-        int num_1 = 5, num_2 =3, answer = 0;
+ */
+public class I_control_structures_Switch_and_Case {
+
+    public static void main(String[] args) {
+        int num_1 = 5, num_2 = 3, answer = 0;
         int parameter = 4; //put here your case number
 
-        switch (parameter){//here we've parameter, which will shwitch between different cases
-            case 1 : answer = num_1 + num_2;
-            System.out.println("The result of the adding is:" + answer);
+        switch (parameter) {//here we've parameter, which will switch between different cases
+            case 1:
+                answer = num_1 + num_2;
+                System.out.println("The result of the adding is:" + answer);
                 break; //case one ends here
-            case 2 : answer = num_1 - num_2;
+            case 2:
+                answer = num_1 - num_2;
                 System.out.println("the answer of the subtraction is: " + answer);
                 break; //case two ends here
-            case 3 : answer = num_1 * num_2;
+            case 3:
+                answer = num_1 * num_2;
                 System.out.println("The result of the multiply is: " + answer);
                 break; //case 3 ends here
-            case 4 : answer = num_1 / num_2;
+            case 4:
+                answer = num_1 / num_2;
                 System.out.println("The result of the division is: " + answer);
                 break; //case 4 ends here
-            default: System.out.println("This doesnt exist"); 
-            //at the end as in if-else we add else, here we add default for wrong answers
-            break;//default ends here
+            default:
+                System.out.println("This doesnt exist");
+                //at the end as in if-else we add else, here we add default for wrong answers
+                break;//default ends here
         }
     }
 }

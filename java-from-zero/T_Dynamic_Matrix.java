@@ -1,6 +1,6 @@
-/* As we've seen at dynamix index on one dimension arrays, 
+/* As we've seen at dynamic index on one dimension arrays, 
 here we'll also use a loop with for, this is the way to make 
-index move dinamically.
+index move dynamically.
 
 Explaining this with theory will be a little bit difficult
 and maybe with an exercise you'll understand better.
@@ -14,36 +14,47 @@ and maybe with an exercise you'll understand better.
  * 
  */
 public class T_Dynamic_Matrix {
-    public static void main(String[] args) {
-        int matrix [][] = new int [3][3];
-        int counter = 1; //This will be the counter for the data in the different positions of the matrix.
 
-        for (int i = 0; i < 3; i++) { //the exercise tell us to do a 3 line and 3 column matrix
-            for (int j = 0; j < 3; j++){//we put here also the condition <3 because of the numebr of columns
-                matrix[i][j]=counter;//first position will be counter's value.
+    public static void main(String[] args) {
+        int matrix[][] = new int[3][3];//we declare a 3,3 positions matrix
+        int counter = 1; //Counter will be increasing for getting matrix full of data, 
+
+        for (int i = 0; i < 3; i++) { //i variable will achieve the lines
+            for (int j = 0; j < 3; j++) {//j will achieve the columns
+                matrix[i][j] = counter;//first position will be counter's value.
                 counter++; //Counter then will increase
-                System.out.print(matrix [i][j]); //we print the previous info.
+                System.out.print(matrix[i][j]); //we print the previous info.
 
             }
-            
+
             System.out.println("");//when that occurs, the program will do a line break, for starting again with the second line of the matrix.
         }
-        /**EXPLENATION OF THE LOOP 
-         * i=line -- j=column
-         * counter = 1 
-         * 
-         * As we've learned the first position of the printing matrix by default is 0,0
-         * matrix [i][j] = counter - which value is 1, so the 0,0 position will be 1
-         * counter ++ => counter now is 2
-         * j now is 1 which is < 3 so the loop continues
-         * now counter is 2 so in the print part the 0,1 position will be 2
-         * and then counter increases to 3
-         * the loop continues and now j=2, which is <3 so this is the last loop
-         * counter now is 3 so Matrix [i][j] is now 3
-         * the loop ends and we add a line break, now it goes back to i loop
-         * i now is 1 so the j loop starts again for doing the second line as first
-         * when 3 positions are finished it will do again a line break and start with the last
-          line  */
+        /**
+         * EXPLANATION OF THE LOOP i=line -- j=column counter = 1
+         *
+         * As we've learned, by default when we print a Matrix, the first
+         * position which will print is 0,0 matrix [i][j] = counter - which
+         * value is 1, so the 0,0 position will be 1 counter ++ => counter now
+         * is 2 We continue inside column's loop (j variable's loop), j now is 1
+         * which is < 3 so the loop continues
+         *
+         * we are at 0,1 position because of the loop, counter's value now is 2
+         * so in 0,1 position there will be added a 2 and then counter increases
+         * to 3
+         *
+         * the loop continues, now j=2, which is <3 so we are yet inside j loop
+         * counter now is 3 so 0,2 position will be 3
+         *
+         * now j=3 and the condition tell us the loop will be running until j<3
+         * so the program exit from the loop We are now again i loop, which's
+         * value now is 1, j loop start's again but now at 1,0 position counter
+         * has not changed the last value, which was 3, now with the loops
+         * increase is 4 4 is added to 1,0 position. then the loop will
+         * continue, counter will continue increasing also until it is at 1,2
+         * position and it will start the i loop again.
+         *
+         * finally when it all ends the matrix will be printed
+         */
     }
 }
 /*
